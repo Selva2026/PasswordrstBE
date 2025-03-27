@@ -54,7 +54,7 @@ const resetPage = async (req, res) => {
     await sendEmail(
         email,
         "Password Reset Verification Email",
-        html: `<p>Click <a href="${resetLink}">here</a> to reset your password. This link expires in 1 hour.</p>`,
+       'Click this link ${resetLink} to reset your password. This link expires in 1 hour`
     );
 
     return res.status(200).json({ message: 'Password reset email sent successfully' , token});
