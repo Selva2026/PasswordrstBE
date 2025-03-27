@@ -48,7 +48,7 @@ const resetPage = async (req, res) => {
     )
 
     
-    const resetLink = `https://passwordrts.netlify.app/updatepwr/${token}`;
+    const resetLink = `https://passwordrts.netlify.app/updatePwr/${token}`;
 
     // Send the password reset email
     await sendEmail(
